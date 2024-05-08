@@ -3,6 +3,10 @@ from pypinyin.style import register
 
 htmlstart = """<!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+</head>
+<body>
 <body>
 <a href="1.html">1</a>
 <a href="2.html">2</a>
