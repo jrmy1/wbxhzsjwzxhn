@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<a href="template.html">1</a>
+
+<table>
+
+<tr scope="row">
+
+<td>
+    <table>
+    <tr>
+        <td id="w1py" style="visibility:hidden;text-align: center;">ni</td>
+    </tr>
+    <tr>
+        <td id="w1" style="text-align:center;"onclick="annotate(this)">你</td>
+    </tr>
+    </table>
+</td>
+
+<td>
+    <table>
+    <tr>
+        <td id="w9py" style="visibility:hidden;text-align: center;">ni</td>
+    </tr>
+    <tr>
+        <td id="w9" style="text-align:center;"onclick="annotate(this)">你</td>
+    </tr>
+    </table>
+</td>
+
+    <td id="w2py" style="visibility:hidden;text-align: center;">hao</td>
+    <td id="w3py" style="visibility:hidden;text-align: center;">ma</td>
+</tr>
+
+<tr scope="row">
+    <td id="w2" style="text-align:center;"onclick="annotate(this)">好</td>
+    <td id="w3" style="text-align:center;"onclick="annotate(this)">吗</td>
+</tr>
+
+<tr scope="row">
+    <td id="w4py" style="visibility:hidden;text-align: center;">wo</td>
+    <td id="w5py" style="visibility:hidden;text-align: center;">bu</td>
+    <td id="w6py" style="visibility:hidden;text-align: center;">hao</td>
+</tr>
+
+<tr scope="row">
+    <td id="w4" style="text-align:center;" onclick="annotate(this)">我</td>
+    <td id="w5" style="text-align:center;"onclick="annotate(this)">不</td>
+    <td id="w6" style="text-align:center;"onclick="annotate(this)">好</td>
+</tr>
+
+</table>
+
+
+</body>
+
+<script>
+function annotate(element) {
+    const annotationid = element.id.toString() + "py"
+    const visibility = document.getElementById(annotationid).style.visibility;
+    document.getElementById(annotationid).style.visibility = visibility == "hidden" ? "visible" : "hidden";
+}
+</script>
+
+
+</html>
+
